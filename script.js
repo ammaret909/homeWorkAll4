@@ -156,7 +156,6 @@ function editStudentToDB(student){
     }).catch(error => {
         return null
     })
-
 }
 
 function deleteStudet(id) {
@@ -191,7 +190,6 @@ function onAddStudentClick() {
     }else{
         addStudentToDB(student)
     }
-    
 }
 document.getElementById('addButton').addEventListener('click', function () {
     onAddStudentClick()
@@ -220,7 +218,6 @@ function editStudentData(incomeStudent) {
     document.getElementById('imageLinkInput').value = incomeStudent.image
 }
 function onLoad() {
-
     fetch('http://dv-student-backend-2019.appspot.com/students').then(response => {
         return response.json()
     })
